@@ -141,6 +141,7 @@ func NewInstanceInfo(hostName, app, ip string, port int, ttl uint, isSsl bool) *
 		}
 	}
 	instanceInfo.StatusPageUrl = protocol + "://" + hostName + stringPort + "/info"
+	instanceInfo.HomePageUrl=protocol + "://" + hostName + stringPort+"/"
 	return instanceInfo
 }
 
